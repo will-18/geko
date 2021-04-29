@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#0BC314</color>
+    <color name="purple_500">#16C50A</color>
+    <color name="purple_700">#21B300</color>
+    <color name="teal_200">#19DA03</color>
+    <color name="teal_700">#408701</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--colores personalizados-->
+    <color name= "transparente">#00FFFFFF</color>
+    <color name="rojo">#DA2424</color>
+    <color name = "verdepalido">#9CA6D692</color>
+    <color name="verdeseleccionado">#248E11</color>
+</resources>

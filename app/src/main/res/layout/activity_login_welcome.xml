@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginWelcomeActivity"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="50dp"
+    android:text="BIENVENIDO"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:background="@color/teal_200"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="50dp">
+        <TextView
+        android:id="@+id/nombreW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+            android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/correoW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:id="@+id/telefonoW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="telefono"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"/>
+    <ImageButton
+
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:autofillHints="Cerrar Sesion"
+        android:id="@+id/cerrSesion"
+        android:background="@color/purple_500"
+        android:layout_gravity="center" />
+    </LinearLayout>
+</LinearLayout>

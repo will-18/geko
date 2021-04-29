@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <Button
+            android:background="@color/verdeseleccionado"
+            android:id="@+id/iniciarFrag"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="0.50"
+            android:layout_marginRight="0.5dp"
+            android:onClick="onClick"
+            android:text="Iniciar Sesión" />
+        <Button
+            android:id="@+id/registrarseFrag"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="0.5dp"
+            android:layout_weight="0.50"
+            android:onClick="onClick"
+            android:text="Registrarse"
+            android:background="@color/verdepalido"/>
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragmentBase"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

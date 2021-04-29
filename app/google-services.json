@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "827249346317",
+    "firebase_url": "https://digitalgeko-a1bb0-default-rtdb.firebaseio.com",
+    "project_id": "digitalgeko-a1bb0",
+    "storage_bucket": "digitalgeko-a1bb0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827249346317:android:57eb8ffb25fb4c428d5244",
+        "android_client_info": {
+          "package_name": "com.digitalgeko.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827249346317-ke04cumiiukmm91c7pk9t9oi21r1d443.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6nxMrrnEDTTJcPIOVuPGLFb-5DJq5HEs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827249346317-ke04cumiiukmm91c7pk9t9oi21r1d443.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
