@@ -107,9 +107,26 @@ DatabaseReference databaseReference;
 
                         if (correo.contains("@")) //comparar si hay @ dentro del texto del correo
                         {
+                            int contadorNumero = 0;
+                            String [] numeros = contrasena.split("|");
+                            for (int i = 0; i < numeros.length; i++)
+                            {
+                                if      (numeros[i].equals("0")|numeros[i].equals("1")|
+                                        numeros[i].equals("2")|numeros[i].equals("6")|
+                                        numeros[i].equals("3")|numeros[i].equals("7")|
+                                        numeros[i].equals("4")|numeros[i].equals("8")|
+                                        numeros[i].equals("5")|numeros[i].equals("9"))
+                                {
+                                    contadorNumero = contadorNumero+1;
+                                    //Toast.makeText(MainActivity.this, "Si hay numeros", Toast.LENGTH_LONG).show();}
+                                }
+                                else {//Toast.makeText(MainActivity.this, "no hay numeros" , Toast.LENGTH_LONG).show();}
+
+                                }}
+
                             String minuscula = contrasena.toLowerCase(); //pasar todo a minuscula
                             String mayusculas = contrasena.toUpperCase(); // pasa todo a mayuscula
-                            String sinsignos = contrasena.replaceAll("[\p{Punct}&&[^()]]", ""); //remplace caracteres documentacion:https://www.javatpoint.com/java-string-replaceall
+                            String sinsignos = contrasena.replaceAll("\\p{Punct}", ""); //remplace caracteres por espacios documentacion:https://www.javatpoint.com/java-string-replaceall
 
                             if (contrasena.equals(minuscula))
                             {
@@ -130,6 +147,9 @@ DatabaseReference databaseReference;
                             {
                                 Toast.makeText(getContext(), "Ingrese un numero telefónico valido", Toast.LENGTH_SHORT).show();
                             }
+                            else if (contadorNumero <= 0)
+                            {Toast.makeText(getContext(), "La contraseña debe incluir por lo menos un numero" , Toast.LENGTH_LONG).show();}
+
                             else
                             {
                                 ///////////////Datos correctos
