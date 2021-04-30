@@ -109,7 +109,7 @@ DatabaseReference databaseReference;
                         {
                             String minuscula = contrasena.toLowerCase(); //pasar todo a minuscula
                             String mayusculas = contrasena.toUpperCase(); // pasa todo a mayuscula
-                            String sinsignos = contrasena.replaceAll("\\p{Punct}", ""); //remplace caracteres por espacios documentacion:https://www.javatpoint.com/java-string-replaceall
+                            String sinsignos = contrasena.replaceAll("[\p{Punct}&&[^()]]", ""); //remplace caracteres documentacion:https://www.javatpoint.com/java-string-replaceall
 
                             if (contrasena.equals(minuscula))
                             {
